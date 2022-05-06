@@ -1,70 +1,58 @@
-# Bank-Marketing-Effectiveness-Prediction
-Predicting the effectiveness of bank marketing campaigns
 
-# Problem Description
-
+# # Problem Description
 The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. The classification goal is to predict if the client will subscribe a term deposit (variable y).
 
-# Data Description
-Input variables:
+<h2> :floppy_disk: Project Files Description</h2>
 
-Bank Client data:
+<p>This repository includes 1 colab notebook (.ipynb) file and 1 pdf file of project presentation. </p>
+<h4>About Files:</h4>
+<ul>
+<li><b>NYC Taxi Trip Time Prediction Capstone Project.ipynb</b> - This file includes Features description, exploratory data Analysis, feature engineering, feature scaling and implemented algorithms for eg. <b>KNN, Random Forest and LGBM.</b></li> 
+ <li><b>NYC_PPT</b> -  This is a power point presentation file of a project. It includes various visualaized plots of EDA using <b>Seaborn and Matplotlib</b>. The result chart of various implemented algorithms.</li>
+  
 
-* age (numeric) job : type of job (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')
+![------------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-* marital : marital status (categorical: 'divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)
+<h2> :clipboard: Summary</h2>
+<p align="justify">The Bank data contains 45211 records and 17 columns. It contains 7 numerical (int) and 10 Categorical (object) datatypes columns. After initial data exploration, we didn’t find any duplicated records and missing values in any column. The target variable has highly imbalanced distribution. This was our main challenge. In classification problems we need to keep in mind that only Accuracy score doesn’t give true picture about classification. Accuracy score usually
+gives higher weightage to the majority class. Some features contained many categorical values and those values merged and new feature added to the dataset. Some numerical feature values converted into range of values for model building and interpretability. Using SMOTE the given target variable balanced for model. In this project we have implemented different algorithms KNN, Random Forest Classifier and LightGBM. LightGBM with duration feature got 0.41 precision and 0.81 Recall score. For a real world prediction, the duration feature dropped and LightGBM without duration feature got 0.46 precision and 0.39 Recall score. Te AuC score obtaines is 0.76 on test data<b/></p>
 
-* education (categorical: 'basic.4y','basic.6y','basic.9y','high.school','illiterate','professional.course','university.degree','unknown')
+![------------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-* default: has credit in default? (categorical: 'no','yes','unknown')
+<!-- CREDITS -->
+<h2 id="credits"> :scroll: Credits</h2>
 
-* housing: has housing loan? (categorical: 'no','yes','unknown')
+Saurabh Funde  | Avid Reader | Data Science enthusiast |
 
-* loan: has personal loan? (categorical: 'no','yes','unknown')
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabhfunde/)
+[![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@saurabh.f)
 
-Related with the last contact of the current campaign:
+ <h2>Contributors:</h2>
+  <li><p>Akanksha Agarwal</p>
+      <p>Github: https://github.com/agarwal-akanksha</p>
+  <li><p>GaneshKumar Patel</p>
+      <p>Github: https://github.com/GaneshkumarPatel</p>
+  <li><p>Yaman Saini</p>
+      <p>Github: https://github.com/yaman9675</p>
+  <li><p>Sanjay Kumar</p>
+      <p>Github: https://github.com/sanjaymkr</p>
+   
 
-* contact: contact communication type (categorical: 'cellular','telephone')
+![------------------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<h2>Algorithm References:</h2>
+<ul>
+  <li><p>KNN</p>
+      <p>Link: https://towardsdatascience.com/an-intuitive-guide-to-knn-with-implementation-fc100bf29a6f</p>
+  </li>
+  <li><p>LGBM</p>
+      <p>Link: https://towardsdatascience.com/how-to-beat-the-heck-out-of-xgboost-with-lightgbm-comprehensive-tutorial-5eba52195997</p>
+  </li>
+  <li><p>Random Forest</p>
+      <p>Link: https://www.analyticsvidhya.com/blog/2021/10/an-introduction-to-random-forest-algorithm-for-beginners/</p>
+  </li>
+</ul>
+ 
+ <h2>Data Source</h2>
+  <li><p>Kaggle</p>
 
-* month: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
-
-* day_of_week: last contact day of the week (categorical: 'mon','tue','wed','thu','fri')
-
-* duration: last contact duration, in seconds (numeric). Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no'). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model.
-
-Other attributes:
-
-* campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
-
-* pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means client was not previously contacted)
-
-* previous: number of contacts performed before this campaign and for this client (numeric)
-
-* poutcome: outcome of the previous marketing campaign (categorical: 'failure','nonexistent','success')
-
-Output variable (desired target):
-
-* y - has the client subscribed a term deposit? (binary: 'yes','no')
-
-# Steps Involved
-* Data Cleaning
-* Univariate Data Analysis
-* Bivariate Data Analysis
-* Feature Engineering
-* Feature Selection
-* Balancing the Dataset
-* Choosing correct evaluation metrics
-* Baseline Models
-* Final Model
-# Libraries used for Data visualization
-* Matplotlib
-* Seaborn
-# Algorithms Used
-* K-Nearest Neighbor Classifier
-* Random Forest Classifier
-* ANN
-* LigtGBM
-# Final Algorithm
-* LigtGBM (Tuned using RandomizedSearchCV Technique)
-# Evaluation Matrics Used
-* Accuracy (Score Achieve : 0.874)
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
