@@ -32,8 +32,8 @@ Saurabh Funde  | Avid Reader | Data Science enthusiast |
       <p>Github: https://github.com/agarwal-akanksha</p>
   <li><p>GaneshKumar Patel</p>
       <p>Github: https://github.com/GaneshkumarPatel</p>
-  <li><p>Yaman Saini</p>
-      <p>Github: https://github.com/yaman9675</p>
+  <li><p>Saurabh</p>
+      <p>Github: https://github.com/Saurabhf</p> 
   <li><p>Sanjay Kumar</p>
       <p>Github: https://github.com/sanjaymkr</p>
    
