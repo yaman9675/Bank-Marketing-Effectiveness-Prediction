@@ -24,8 +24,8 @@ gives higher weightage to the majority class. Some features contained many categ
 
 Saurabh Funde  | Avid Reader | Data Science enthusiast |
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurabhfunde/)
-[![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@saurabh.f)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yamansaini14/)
+[![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@ys726507)
 
  <h2>Contributors:</h2>
   <li><p>Akanksha Agarwal</p>
